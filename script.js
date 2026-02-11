@@ -54,12 +54,6 @@ const translations = {
 				title: 'Legal',
 				terms: 'Terms of Service',
 				privacy: 'Privacy Policy'
-			},
-			links: {
-				title: 'Links',
-				about: 'About',
-				features: 'Features',
-				download: 'Download on App Store'
 			}
 		}
 	},
@@ -117,12 +111,6 @@ const translations = {
 				title: '法的情報',
 				terms: '利用規約',
 				privacy: 'プライバシーポリシー'
-			},
-			links: {
-				title: 'リンク',
-				about: 'アプリについて',
-				features: '機能紹介',
-				download: 'App Storeでダウンロード'
 			}
 		}
 	}
@@ -277,13 +265,6 @@ function updateTexts() {
 		if (legalLinks[0]) legalLinks[0].innerHTML = `<i class="fas fa-file-contract"></i>${t.footer.legal.terms}`;
 		if (legalLinks[1]) legalLinks[1].innerHTML = `<i class="fas fa-shield-alt"></i>${t.footer.legal.privacy}`;
 
-		// Links
-		const linksH3 = footerSections[2].querySelector('h3');
-		if (linksH3) linksH3.textContent = t.footer.links.title;
-		const linksLinks = footerSections[2].querySelectorAll('a');
-		if (linksLinks[0]) linksLinks[0].innerHTML = `<i class="fas fa-info-circle"></i>${t.footer.links.about}`;
-		if (linksLinks[1]) linksLinks[1].innerHTML = `<i class="fas fa-star"></i>${t.footer.links.features}`;
-		if (linksLinks[2]) linksLinks[2].innerHTML = `<i class="fab fa-app-store-ios"></i>${t.footer.links.download}`;
 	}
 
 	// Update meta tags
