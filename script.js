@@ -57,8 +57,9 @@ const translations = {
 			},
 			links: {
 				title: 'Links',
+				about: 'About',
 				features: 'Features',
-				download: 'Download'
+				download: 'Download on App Store'
 			}
 		}
 	},
@@ -119,8 +120,9 @@ const translations = {
 			},
 			links: {
 				title: 'リンク',
+				about: 'アプリについて',
 				features: '機能紹介',
-				download: 'ダウンロード'
+				download: 'App Storeでダウンロード'
 			}
 		}
 	}
@@ -170,26 +172,29 @@ function updateMetaTags() {
 // Update screenshot sources based on language
 function updateScreenshots() {
 	const screenshotFiles = [
-		'1_APP_IPHONE_67_01.png',
-		'2_APP_IPHONE_67_02.png',
-		'3_APP_IPHONE_67_03.png',
-		'4_APP_IPHONE_67_04.png'
+		'01_history.png',
+		'02_statistics_initial.png',
+		'06_weather.png',
+		'09_detail.png',
+		'10_share_preview.png'
 	];
 	const lang = currentLang === 'ja' ? 'ja' : 'en';
+
+	// Use Japanese screenshots as fallback when English screenshots are not available
+	const basePath = 'images/screenshots/ja/iPhone_6-9';
 
 	// Update hero carousel screenshots
 	const carouselImages = document.querySelectorAll('.screenshot-carousel .screenshot-item img');
 	carouselImages.forEach((img, index) => {
 		if (screenshotFiles[index]) {
-			img.src = `images/screenshot/iphone/${lang}/${screenshotFiles[index]}`;
+			img.src = `${basePath}/${screenshotFiles[index]}`;
 		}
 	});
-
 
 	// Update about section image
 	const aboutImg = document.querySelector('.about-image img');
 	if (aboutImg) {
-		aboutImg.src = `images/screenshot/iphone/${lang}/1_APP_IPHONE_67_01.png`;
+		aboutImg.src = `${basePath}/01_history.png`;
 	}
 
 	// Update all elements with data-lang attributes
@@ -276,8 +281,9 @@ function updateTexts() {
 		const linksH3 = footerSections[2].querySelector('h3');
 		if (linksH3) linksH3.textContent = t.footer.links.title;
 		const linksLinks = footerSections[2].querySelectorAll('a');
-		if (linksLinks[0]) linksLinks[0].innerHTML = `<i class="fas fa-star"></i>${t.footer.links.features}`;
-		if (linksLinks[1]) linksLinks[1].innerHTML = `<i class="fas fa-download"></i>${t.footer.links.download}`;
+		if (linksLinks[0]) linksLinks[0].innerHTML = `<i class="fas fa-info-circle"></i>${t.footer.links.about}`;
+		if (linksLinks[1]) linksLinks[1].innerHTML = `<i class="fas fa-star"></i>${t.footer.links.features}`;
+		if (linksLinks[2]) linksLinks[2].innerHTML = `<i class="fab fa-app-store-ios"></i>${t.footer.links.download}`;
 	}
 
 	// Update meta tags
