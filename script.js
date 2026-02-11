@@ -43,6 +43,10 @@ const translations = {
 				desc: 'Get personalized coaching advice powered by AI. Analyze your activities and receive tailored recommendations to improve your performance.'
 			}
 		},
+		download: {
+			title: 'Start Free Today',
+			subtitle: 'Let Cranq support your fitness journey.'
+		},
 		footer: {
 			support: {
 				title: 'Support',
@@ -99,6 +103,10 @@ const translations = {
 				title: 'AIコーチ',
 				desc: 'AIによるパーソナライズされたコーチングアドバイス。アクティビティを分析し、パフォーマンス向上のためのアドバイスを提供します。'
 			}
+		},
+		download: {
+			title: '今すぐ無料ではじめよう',
+			subtitle: 'あなたのフィットネスライフを、Cranqがサポートします。'
 		},
 		footer: {
 			support: {
@@ -207,7 +215,7 @@ function updateTexts() {
 
 	// Hero section
 	const heroSubtitle = document.querySelector('.hero p');
-	if (heroSubtitle) heroSubtitle.innerHTML = t.hero.subtitle.replace(/\n/g, '<br>');
+	if (heroSubtitle) heroSubtitle.textContent = t.hero.subtitle;
 
 	const ctaButton = document.querySelector('.cta-button');
 	if (ctaButton) ctaButton.textContent = t.hero.download;
@@ -247,9 +255,17 @@ function updateTexts() {
 		}
 	});
 
+	// Download section
+	const downloadTitle = document.querySelector('#download .section-title');
+	if (downloadTitle) downloadTitle.innerHTML = `<i class="fas fa-download"></i> ${t.download.title}`;
+	const downloadSubtitle = document.querySelector('.download-subtitle');
+	if (downloadSubtitle) downloadSubtitle.textContent = t.download.subtitle;
+	const downloadButton = document.querySelector('.cta-button-bottom');
+	if (downloadButton) downloadButton.textContent = t.hero.download;
+
 	// Footer
 	const footerSections = document.querySelectorAll('.footer-section');
-	if (footerSections.length >= 3) {
+	if (footerSections.length >= 2) {
 		// Support
 		const supportH3 = footerSections[0].querySelector('h3');
 		if (supportH3) supportH3.textContent = t.footer.support.title;

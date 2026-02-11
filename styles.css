@@ -965,6 +965,34 @@ body {
 }
 
 /* ============================================================
+   Download CTA Section
+   ============================================================ */
+.download-section {
+	background: linear-gradient(
+		135deg,
+		var(--gradient-dark-start) 0%,
+		var(--gradient-dark-mid) 50%,
+		var(--gradient-dark-end) 100%
+	);
+	padding: 100px 0;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+
+.download-subtitle {
+	font-size: 1.2em;
+	color: var(--text-secondary);
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.cta-button-bottom {
+	opacity: 1;
+	animation: none;
+}
+
+/* ============================================================
    Footer
    ============================================================ */
 .footer {
