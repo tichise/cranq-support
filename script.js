@@ -171,7 +171,6 @@ function updateScreenshots() {
 		'01_history.png',
 		'02_statistics_initial.png',
 		'06_weather.png',
-		'09_detail.png',
 		'10_share_preview.png'
 	];
 	const lang = currentLang === 'ja' ? 'ja' : 'en';
