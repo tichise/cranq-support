@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-ja="Cranq - サイクリング・ランニングのアクティビティ管理アプリ" data-lang-en="Cranq - Activity Management App for Cycling, Running & Fitness">Cranq - サイクリング・ランニングのアクティビティ管理アプリ</title>
+
+    <!-- SEO メタタグ -->
+    <meta name="description" data-lang-ja="Cranqは、サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリです。HealthKit連携、GPSルート記録、統計分析で日々のトレーニングをサポートします。" data-lang-en="Cranq is an iOS fitness app for tracking and managing cycling, running, and other activities. Supports your daily training with HealthKit integration, GPS route recording, and statistical analysis.">
+    <meta name="keywords" data-lang-ja="Cranq, サイクリング, ランニング, フィットネス, アクティビティ, トラッキング, HealthKit, GPS, iOS, ワークアウト, 運動記録" data-lang-en="Cranq, Cycling, Running, Fitness, Activity, Tracking, HealthKit, GPS, iOS, Workout, Exercise Log">
+    <meta name="author" content="Cranq">
+
+    <!-- OGP設定 -->
+    <meta property="og:title" data-lang-ja="Cranq - サイクリング・ランニングのアクティビティ管理アプリ" data-lang-en="Cranq - Activity Management App for Cycling, Running & Fitness">
+    <meta property="og:description" data-lang-ja="サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリ。HealthKit連携、GPSルート記録、統計分析で日々のトレーニングをサポートします。" data-lang-en="An iOS fitness app for tracking and managing cycling, running, and other activities. Supports your daily training with HealthKit integration, GPS route recording, and statistical analysis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tichise.github.io/cranq-support">
+    <meta property="og:site_name" content="Cranq">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-lang-ja="Cranq - サイクリング・ランニングのアクティビティ管理アプリ" data-lang-en="Cranq - Activity Management App for Cycling, Running & Fitness">
+    <meta name="twitter:description" data-lang-ja="サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリ。HealthKit連携、GPSルート記録、統計分析で日々のトレーニングをサポートします。" data-lang-en="An iOS fitness app for tracking and managing cycling, running, and other activities. Supports your daily training with HealthKit integration, GPS route recording, and statistical analysis.">
+    <meta name="twitter:url" content="https://tichise.github.io/cranq-support">
+
+    <!-- その他のメタタグ -->
+    <meta name="apple-itunes-app" content="app-id=6758046333">
+    <meta name="theme-color" content="#0F2027">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- メタタグローカライズスクリプト -->
+    <script>
+        // ブラウザの言語設定を取得
+        const userLang = navigator.language || navigator.userLanguage;
+
+        // メタタグのローカライズ関数
+        function localizeMetaTags() {
+            // botの場合は常に日本語を使用
+            const isBot = /bot|crawler|spider|crawling/i.test(navigator.userAgent);
+            const lang = isBot ? 'ja' : (userLang.startsWith('ja') ? 'ja' : 'en');
+
+            document.querySelectorAll('[data-lang-ja]').forEach(element => {
+                const content = element.getAttribute(`data-lang-${lang}`);
+                if (content) {
+                    if (element.tagName.toLowerCase() === 'title') {
+                        element.textContent = content;
+                    } else if (element.getAttribute('property') || element.getAttribute('name')) {
+                        element.setAttribute('content', content);
+                    }
+                }
+            });
+        }
+
+        // DOMContentLoadedイベントでローカライズを実行
+        document.addEventListener('DOMContentLoaded', localizeMetaTags);
+    </script>
+
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Cranq",
+      "description": "サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリ",
+      "operatingSystem": "iOS 26.2+",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="#features" data-lang-ja="機能" data-lang-en="Features">機能</a>
+            <a href="#about" data-lang-ja="アプリについて" data-lang-en="About">アプリについて</a>
+            <a href="#download" data-lang-ja="ダウンロード" data-lang-en="Download">ダウンロード</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="particles-bg" id="heroParticles"></div>
+        <div class="hero-content">
+            <h1>Cranq</h1>
+            <p data-lang-ja="サイクリング・ランニングのアクティビティを記録・管理する<br>フィットネストラッキングアプリ" data-lang-en="Track and manage your cycling, running & fitness activities<br>with a powerful activity tracking app">サイクリング・ランニングのアクティビティを記録・管理する<br>フィットネストラッキングアプリ</p>
+            <a id="download" href="https://apps.apple.com/jp/app/cranq/id6758046333" class="cta-button" target="_blank" data-lang-ja="App Storeからダウンロード" data-lang-en="Download on the App Store">App Storeからダウンロード</a>
+
+            <div class="screenshot-carousel">
+                <div class="screenshot-item">
+                    <img src="images/screenshot/iphone/en/1_APP_IPHONE_67_01.png" alt="Cranq Screenshot 1">
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/screenshot/iphone/en/2_APP_IPHONE_67_02.png" alt="Cranq Screenshot 2">
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/screenshot/iphone/en/3_APP_IPHONE_67_03.png" alt="Cranq Screenshot 3">
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/screenshot/iphone/en/4_APP_IPHONE_67_04.png" alt="Cranq Screenshot 4">
+                </div>
+                <button class="nav-button prev-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-button next-button"><i class="fas fa-chevron-right"></i></button>
+                <div class="screenshot-dots"></div>
+            </div>
+
+            <div class="platform-info">
+                <div class="info-tag">
+                    <i class="fab fa-apple"></i>
+                    <span>iOS 26.2+</span>
+                </div>
+                <div class="info-tag">
+                    <i class="fas fa-language"></i>
+                    <span data-lang-ja="日本語・English" data-lang-en="English / Japanese">日本語・English</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2 class="section-title"><i class="fas fa-info-circle"></i> <span data-lang-ja="アプリについて" data-lang-en="About the App">アプリについて</span></h2>
+            <div class="about-section">
+                <div class="about-content">
+                    <p data-lang-ja="Cranqは、サイクリングやランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリです。Apple HealthKitと連携し、ワークアウトデータを自動的に取得・表示します。日々のトレーニングを可視化し、継続的な運動習慣をサポートします。" data-lang-en="Cranq is an iOS fitness app that lets you record and manage activities like cycling and running. It integrates with Apple HealthKit to automatically retrieve and display workout data, helping you visualize your daily training and maintain consistent exercise habits.">Cranqは、サイクリングやランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリです。Apple HealthKitと連携し、ワークアウトデータを自動的に取得・表示します。日々のトレーニングを可視化し、継続的な運動習慣をサポートします。</p>
+                    <p data-lang-ja="GPSによるルート記録機能で走行経路をマップ上に表示。距離、速度、消費カロリーなどの詳細な統計情報をグラフで確認でき、トレーニングの成果を一目で把握できます。ストリーク機能により、連続運動日数を記録してモチベーションを維持します。" data-lang-en="The GPS route recording feature displays your path on a map. View detailed statistics like distance, speed, and calories burned in charts to track your training progress at a glance. The streak feature records consecutive exercise days to keep you motivated.">GPSによるルート記録機能で走行経路をマップ上に表示。距離、速度、消費カロリーなどの詳細な統計情報をグラフで確認でき、トレーニングの成果を一目で把握できます。ストリーク機能により、連続運動日数を記録してモチベーションを維持します。</p>
+                    <p data-lang-ja="ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。AIコーチ機能がトレーニングデータを分析し、パーソナライズされたアドバイスを提供します。あなたの理想的なフィットネスライフを、Cranqがサポートします。" data-lang-en="Check your weekly activity summary instantly with the home screen widget. The AI coach feature analyzes your training data to provide personalized advice. Let Cranq support your ideal fitness lifestyle.">ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。AIコーチ機能がトレーニングデータを分析し、パーソナライズされたアドバイスを提供します。あなたの理想的なフィットネスライフを、Cranqがサポートします。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/screenshot/iphone/en/1_APP_IPHONE_67_01.png" alt="Cranq アプリスクリーンショット" data-lang-ja-src="images/screenshot/iphone/ja/1_APP_IPHONE_67_01.png" data-lang-en-src="images/screenshot/iphone/en/1_APP_IPHONE_67_01.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="gradient-bg"></div>
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-star"></i> <span data-lang-ja="主な機能" data-lang-en="Key Features">主な機能</span></h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3 data-lang-ja="HealthKit連携" data-lang-en="HealthKit Integration">HealthKit連携</h3>
+                        <p data-lang-ja="Apple HealthKitとシームレスに連携。ワークアウトデータを自動的に取得し、サイクリング・ランニング・ウォーキングなどのアクティビティを一元管理します。" data-lang-en="Seamlessly integrates with Apple HealthKit. Automatically retrieves workout data to centrally manage cycling, running, walking, and other activities.">Apple HealthKitとシームレスに連携。ワークアウトデータを自動的に取得し、サイクリング・ランニング・ウォーキングなどのアクティビティを一元管理します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3 data-lang-ja="GPSルート記録" data-lang-en="GPS Route Recording">GPSルート記録</h3>
+                        <p data-lang-ja="GPSを使用してアクティビティのルートを正確に記録。走行経路をマップ上に表示し、お気に入りのコースを振り返ることができます。" data-lang-en="Accurately record activity routes using GPS. Display your path on a map and look back on your favorite courses.">GPSを使用してアクティビティのルートを正確に記録。走行経路をマップ上に表示し、お気に入りのコースを振り返ることができます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3 data-lang-ja="アクティビティ統計" data-lang-en="Activity Statistics">アクティビティ統計</h3>
+                        <p data-lang-ja="距離、速度、消費カロリー、心拍数などの詳細な統計情報をグラフで可視化。週間・月間レポートでトレーニングの進捗を把握できます。" data-lang-en="Visualize detailed statistics like distance, speed, calories burned, and heart rate in charts. Track training progress with weekly and monthly reports.">距離、速度、消費カロリー、心拍数などの詳細な統計情報をグラフで可視化。週間・月間レポートでトレーニングの進捗を把握できます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-fire"></i>
+                        <h3 data-lang-ja="ストリーク機能" data-lang-en="Streak Tracking">ストリーク機能</h3>
+                        <p data-lang-ja="連続運動日数を記録してモチベーションを維持。目標達成時にはバッジを獲得でき、継続的な運動習慣の形成をサポートします。" data-lang-en="Track consecutive exercise days to stay motivated. Earn badges when you reach goals and build consistent workout habits.">連続運動日数を記録してモチベーションを維持。目標達成時にはバッジを獲得でき、継続的な運動習慣の形成をサポートします。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-th-large"></i>
+                        <h3 data-lang-ja="ホームスクリーンウィジェット" data-lang-en="Home Screen Widget">ホームスクリーンウィジェット</h3>
+                        <p data-lang-ja="ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。アプリを開かなくても運動状況を一目でチェックできます。" data-lang-en="Instantly check your weekly activity summary with the home screen widget. Monitor your exercise status at a glance without opening the app.">ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。アプリを開かなくても運動状況を一目でチェックできます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3 data-lang-ja="AIコーチ" data-lang-en="AI Coach">AIコーチ</h3>
+                        <p data-lang-ja="AIがトレーニングデータを分析し、パーソナライズされたアドバイスを提供。あなたのフィットネス目標達成を知的にサポートします。" data-lang-en="AI analyzes your training data and provides personalized advice. Intelligently supports you in achieving your fitness goals.">AIがトレーニングデータを分析し、パーソナライズされたアドバイスを提供。あなたのフィットネス目標達成を知的にサポートします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-ja="サポート" data-lang-en="Support">サポート</h3>
+                <ul class="footer-links">
+                    <li><a href="https://tichise.github.io/cranq-support" target="_blank">
+                        <i class="fas fa-life-ring"></i><span data-lang-ja="サポートページ" data-lang-en="Support Page">サポートページ</span>
+                    </a></li>
+                    <li><a href="https://github.com/tichise/cranq-support/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml" target="_blank">
+                        <i class="fas fa-bug"></i><span data-lang-ja="バグ報告" data-lang-en="Bug Report">バグ報告</span>
+                    </a></li>
+                    <li><a href="https://github.com/tichise/cranq-support/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml" target="_blank">
+                        <i class="fas fa-lightbulb"></i><span data-lang-ja="機能リクエスト" data-lang-en="Feature Request">機能リクエスト</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-ja="法的情報" data-lang-en="Legal">法的情報</h3>
+                <ul class="footer-links">
+                    <li><a href="terms.html">
+                        <i class="fas fa-file-contract"></i><span data-lang-ja="利用規約" data-lang-en="Terms of Service">利用規約</span>
+                    </a></li>
+                    <li><a href="privacy.html">
+                        <i class="fas fa-shield-alt"></i><span data-lang-ja="プライバシーポリシー" data-lang-en="Privacy Policy">プライバシーポリシー</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-ja="リンク" data-lang-en="Links">リンク</h3>
+                <ul class="footer-links">
+                    <li><a href="https://apps.apple.com/jp/app/cranq/id6758046333" target="_blank">
+                        <i class="fab fa-app-store-ios"></i><span data-lang-ja="App Storeでダウンロード" data-lang-en="Download on App Store">App Storeでダウンロード</span>
+                    </a></li>
+                    <li><a href="#features">
+                        <i class="fas fa-star"></i><span data-lang-ja="機能紹介" data-lang-en="Features">機能紹介</span>
+                    </a></li>
+                    <li><a href="#download">
+                        <i class="fas fa-download"></i><span data-lang-ja="ダウンロード" data-lang-en="Download">ダウンロード</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; <span>2025</span> Cranq. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
