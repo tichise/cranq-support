@@ -168,10 +168,10 @@ function updateMetaTags() {
 // Update screenshot sources based on language
 function updateScreenshots() {
 	const screenshotFiles = [
+		'10_share_preview.png',
 		'01_history.png',
 		'02_statistics_initial.png',
-		'06_weather.png',
-		'10_share_preview.png'
+		'06_weather.png'
 	];
 	const lang = currentLang === 'ja' ? 'ja' : 'en';
 
@@ -205,18 +205,18 @@ function updateTexts() {
 	const t = translations[currentLang];
 
 	// Navigation
-	const navFeatures = document.querySelector('a[href="#features"]');
-	const navAbout = document.querySelector('a[href="#about"]');
-	const navDownload = document.querySelector('a[href="#download"]');
+	const navFeatures = document.querySelector('.nav-links a[href="#features"]');
+	const navAbout = document.querySelector('.nav-links a[href="#about"]');
+	const navDownload = document.querySelector('.nav-links a[href="#download"]');
 	if (navFeatures) navFeatures.textContent = t.nav.features;
 	if (navAbout) navAbout.textContent = t.nav.about;
 	if (navDownload) navDownload.textContent = t.nav.download;
 
 	// Hero section
-	const heroSubtitle = document.querySelector('.hero p');
+	const heroSubtitle = document.querySelector('.hero-text p');
 	if (heroSubtitle) heroSubtitle.textContent = t.hero.subtitle;
 
-	const ctaButton = document.querySelector('.cta-button');
+	const ctaButton = document.querySelector('.hero-text .cta-button');
 	if (ctaButton) ctaButton.textContent = t.hero.download;
 
 	// About section
