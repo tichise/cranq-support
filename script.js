@@ -7,7 +7,7 @@ const translations = {
 			download: 'Download'
 		},
 		hero: {
-			subtitle: 'Visualize your cycling, running, and fitness activities\nwith beautiful statistics and AI coaching',
+			subtitle: 'Visualize your cycling, running, and fitness activities with beautiful statistics and AI coaching',
 			download: 'Download on the App Store'
 		},
 		about: {
@@ -64,7 +64,7 @@ const translations = {
 			download: 'ダウンロード'
 		},
 		hero: {
-			subtitle: 'サイクリング・ランニング・フィットネスの記録を\n美しい統計とAIコーチングで視覚化',
+			subtitle: 'サイクリング・ランニング・フィットネスの記録を美しい統計とAIコーチングで視覚化',
 			download: 'App Storeからダウンロード'
 		},
 		about: {
