@@ -168,10 +168,10 @@ function updateMetaTags() {
 // Update screenshot sources based on language
 function updateScreenshots() {
 	const screenshotFiles = [
+		'10_share_preview.png',
 		'01_history.png',
 		'02_statistics_initial.png',
-		'06_weather.png',
-		'10_share_preview.png'
+		'06_weather.png'
 	];
 	const lang = currentLang === 'ja' ? 'ja' : 'en';
 
