@@ -111,42 +111,42 @@
       icon: "fa-bicycle",
       name: { ja: "朝のライド", en: "Morning ride" },
       when: { ja: "06:42 — 08:15 · GPS", en: "06:42 — 08:15 · GPS" },
-      badge: { ja: "PR", en: "PR" },
+      badge: { ja: "RIDE", en: "RIDE" },
       stats: [
-        { icon: "fa-route",            label: { ja: "距離", en: "Distance" }, value: "42.6 km" },
-        { icon: "fa-stopwatch",        label: { ja: "時間", en: "Duration" }, value: "1:33:20" },
-        { icon: "fa-mountain",         label: { ja: "標高", en: "Elevation" }, value: "612 m" },
-        { icon: "fa-heart-pulse",      label: { ja: "平均心拍", en: "Avg HR" }, value: "142 bpm" },
-        { icon: "fa-cloud-sun",        label: { ja: "天気", en: "Weather" }, value: { ja: "晴れ 14°C", en: "Sunny 14°C" } },
-        { icon: "fa-fire",             label: { ja: "消費", en: "Calories" }, value: "1,284 kcal" }
+        { icon: "fa-route",       label: { ja: "距離", en: "Distance" },   value: "42.6 km" },
+        { icon: "fa-stopwatch",   label: { ja: "時間", en: "Duration" },   value: "1:33:20" },
+        { icon: "fa-mountain",    label: { ja: "標高", en: "Elevation" },  value: "612 m" },
+        { icon: "fa-heart-pulse", label: { ja: "平均心拍", en: "Avg HR" }, value: "142 bpm" },
+        { icon: "fa-cloud-sun",   label: { ja: "天気", en: "Weather" },    value: { ja: "晴れ 14°C", en: "Sunny 14°C" } },
+        { icon: "fa-fire",        label: { ja: "消費", en: "Calories" },   value: "1,284 kcal" }
       ]
     },
     {
       icon: "fa-person-running",
       name: { ja: "夕方のラン", en: "Evening run" },
       when: { ja: "18:05 — 18:42 · GPS", en: "18:05 — 18:42 · GPS" },
-      badge: { ja: "Z2", en: "Z2" },
+      badge: { ja: "RUN", en: "RUN" },
       stats: [
-        { icon: "fa-route",            label: { ja: "距離", en: "Distance" }, value: "7.2 km" },
-        { icon: "fa-stopwatch",        label: { ja: "時間", en: "Duration" }, value: "37:14" },
-        { icon: "fa-gauge-high",       label: { ja: "ペース", en: "Pace" }, value: "5:10 /km" },
-        { icon: "fa-heart-pulse",      label: { ja: "平均心拍", en: "Avg HR" }, value: "138 bpm" },
-        { icon: "fa-cloud-moon",       label: { ja: "天気", en: "Weather" }, value: { ja: "曇り 19°C", en: "Cloudy 19°C" } },
-        { icon: "fa-fire",             label: { ja: "消費", en: "Calories" }, value: "486 kcal" }
+        { icon: "fa-route",       label: { ja: "距離", en: "Distance" },   value: "7.2 km" },
+        { icon: "fa-stopwatch",   label: { ja: "時間", en: "Duration" },   value: "37:14" },
+        { icon: "fa-gauge-high",  label: { ja: "ペース", en: "Pace" },     value: "5:10 /km" },
+        { icon: "fa-heart-pulse", label: { ja: "平均心拍", en: "Avg HR" }, value: "138 bpm" },
+        { icon: "fa-cloud-moon",  label: { ja: "天気", en: "Weather" },    value: { ja: "曇り 19°C", en: "Cloudy 19°C" } },
+        { icon: "fa-fire",        label: { ja: "消費", en: "Calories" },   value: "486 kcal" }
       ]
     },
     {
       icon: "fa-person-walking",
       name: { ja: "週末の山歩き", en: "Weekend hike" },
       when: { ja: "09:18 — 12:04 · GPS", en: "09:18 — 12:04 · GPS" },
-      badge: { ja: "STREAK 14", en: "STREAK 14" },
+      badge: { ja: "WALK", en: "WALK" },
       stats: [
-        { icon: "fa-route",            label: { ja: "距離", en: "Distance" }, value: "11.8 km" },
-        { icon: "fa-stopwatch",        label: { ja: "時間", en: "Duration" }, value: "2:46:31" },
-        { icon: "fa-mountain",         label: { ja: "標高", en: "Elevation" }, value: "823 m" },
+        { icon: "fa-route",            label: { ja: "距離", en: "Distance" },   value: "11.8 km" },
+        { icon: "fa-stopwatch",        label: { ja: "時間", en: "Duration" },   value: "2:46:31" },
+        { icon: "fa-mountain",         label: { ja: "標高", en: "Elevation" },  value: "823 m" },
         { icon: "fa-heart-pulse",      label: { ja: "平均心拍", en: "Avg HR" }, value: "118 bpm" },
-        { icon: "fa-temperature-half", label: { ja: "気温", en: "Temp" }, value: { ja: "9 → 16°C", en: "9 → 16°C" } },
-        { icon: "fa-fire",             label: { ja: "消費", en: "Calories" }, value: "742 kcal" }
+        { icon: "fa-temperature-half", label: { ja: "気温", en: "Temp" },       value: { ja: "9 → 16°C", en: "9 → 16°C" } },
+        { icon: "fa-fire",             label: { ja: "消費", en: "Calories" },   value: "742 kcal" }
       ]
     }
   ];
