@@ -432,6 +432,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+/* Each .hero-phone is a device frame; the inner <img> is shifted up
+   by the height of the iOS status bar so the captured 11:29 clock is
+   cropped out of view. Source captures are 1320x2868 (iPhone 17 Pro Max);
+   trimming the top ~7% (~200px) hides the status bar without touching
+   the home indicator at the bottom. */
 .hero-phone {
   position: absolute;
   bottom: 0;
@@ -439,7 +444,16 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border-soft);
   background: white;
   box-shadow: var(--shadow-3);
+  overflow: hidden;
+  aspect-ratio: 1320 / 2668;
   transition: transform 0.4s var(--ease-out);
+}
+
+.hero-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -7%;
 }
 
 .hero-phone-main {
