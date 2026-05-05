@@ -3,87 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang-ja="Cranq - サイクリング・ランニングのアクティビティ管理アプリ" data-lang-en="Cranq - Activity Management App for Cycling, Running & Fitness">Cranq - サイクリング・ランニングのアクティビティ管理アプリ</title>
+    <title data-lang-ja="Cranq｜HealthKit を、走るためのキャンバスに。" data-lang-en="Cranq — Make HealthKit a canvas for moving.">Cranq｜HealthKit を、走るためのキャンバスに。</title>
 
-    <!-- SEO メタタグ -->
-    <meta name="description" data-lang-ja="Cranqは、サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリです。HealthKit連携、GPSルート記録、統計分析で日々のトレーニングをサポートします。" data-lang-en="Cranq is an iOS fitness app for tracking and managing cycling, running, and other activities. Supports your daily training with HealthKit integration, GPS route recording, and statistical analysis.">
-    <meta name="keywords" data-lang-ja="Cranq, サイクリング, ランニング, フィットネス, アクティビティ, トラッキング, HealthKit, GPS, iOS, ワークアウト, 運動記録" data-lang-en="Cranq, Cycling, Running, Fitness, Activity, Tracking, HealthKit, GPS, iOS, Workout, Exercise Log">
+    <meta name="description"
+          data-lang-ja="Cranq は Apple の HealthKit に蓄積されたサイクリング・ランニングのアクティビティを美しく振り返り、AI が次の一歩を提案する iOS 向けフィットネスアプリです。"
+          data-lang-en="Cranq turns the cycling and running data sitting in Apple HealthKit into a clear story you actually want to revisit. AI then proposes your next move.">
+    <meta name="keywords"
+          data-lang-ja="Cranq, サイクリング, ランニング, フィットネス, HealthKit, GPS, アクティビティ, 統計, ストリーク, AI コーチ, iOS"
+          data-lang-en="Cranq, Cycling, Running, Fitness, HealthKit, GPS, Activity, Statistics, Streak, AI Coach, iOS">
     <meta name="author" content="Cranq">
 
-    <!-- OGP設定 -->
-    <meta property="og:title" data-lang-ja="Cranq - サイクリング・ランニングのアクティビティ管理アプリ" data-lang-en="Cranq - Activity Management App for Cycling, Running & Fitness">
-    <meta property="og:description" data-lang-ja="サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリ。HealthKit連携、GPSルート記録、統計分析で日々のトレーニングをサポートします。" data-lang-en="An iOS fitness app for tracking and managing cycling, running, and other activities. Supports your daily training with HealthKit integration, GPS route recording, and statistical analysis.">
+    <meta property="og:title" data-lang-ja="Cranq｜HealthKit を、走るためのキャンバスに。" data-lang-en="Cranq — Make HealthKit a canvas for moving.">
+    <meta property="og:description"
+          data-lang-ja="HealthKit のワークアウトを美しく振り返り、AI が次の一歩を提案する iOS 向けフィットネスアプリ。"
+          data-lang-en="A fitness app that turns Apple HealthKit workouts into a story worth revisiting. AI suggests your next move.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tichise.github.io/cranq-support">
+    <meta property="og:url" content="https://tichise.github.io/cranq-support/">
     <meta property="og:site_name" content="Cranq">
     <meta property="og:image" content="https://tichise.github.io/cranq-support/images/screenshots/ja/iPhone_6-9/01_history.png">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:locale:alternate" content="en_US">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" data-lang-ja="Cranq - サイクリング・ランニングのアクティビティ管理アプリ" data-lang-en="Cranq - Activity Management App for Cycling, Running & Fitness">
-    <meta name="twitter:description" data-lang-ja="サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリ。HealthKit連携、GPSルート記録、統計分析で日々のトレーニングをサポートします。" data-lang-en="An iOS fitness app for tracking and managing cycling, running, and other activities. Supports your daily training with HealthKit integration, GPS route recording, and statistical analysis.">
+    <meta name="twitter:title" data-lang-ja="Cranq｜HealthKit を、走るためのキャンバスに。" data-lang-en="Cranq — Make HealthKit a canvas for moving.">
+    <meta name="twitter:description"
+          data-lang-ja="HealthKit のワークアウトを美しく振り返り、AI が次の一歩を提案する iOS 向けフィットネスアプリ。"
+          data-lang-en="A fitness app that turns Apple HealthKit workouts into a story worth revisiting. AI suggests your next move.">
     <meta name="twitter:image" content="https://tichise.github.io/cranq-support/images/screenshots/ja/iPhone_6-9/01_history.png">
-    <meta name="twitter:url" content="https://tichise.github.io/cranq-support">
+    <meta name="twitter:url" content="https://tichise.github.io/cranq-support/">
 
-    <!-- その他のメタタグ -->
     <meta name="apple-itunes-app" content="app-id=6758046333">
-    <meta name="theme-color" content="#0F2027">
+    <meta name="theme-color" content="#FBF7F2">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tichise.github.io/cranq-support/">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&family=JetBrains+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&family=JetBrains+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@700&display=swap" rel="stylesheet">
 
-    <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- スタイルシート -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- ファビコン -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- メタタグローカライズスクリプト -->
-    <script>
-        // ブラウザの言語設定を取得
-        const userLang = navigator.language || navigator.userLanguage;
-
-        // メタタグのローカライズ関数
-        function localizeMetaTags() {
-            // botの場合は常に日本語を使用
-            const isBot = /bot|crawler|spider|crawling/i.test(navigator.userAgent);
-            const lang = isBot ? 'ja' : (userLang.startsWith('ja') ? 'ja' : 'en');
-
-            document.querySelectorAll('[data-lang-ja]').forEach(element => {
-                const content = element.getAttribute(`data-lang-${lang}`);
-                if (content) {
-                    if (element.tagName.toLowerCase() === 'title') {
-                        element.textContent = content;
-                    } else if (element.getAttribute('property') || element.getAttribute('name')) {
-                        element.setAttribute('content', content);
-                    }
-                }
-            });
-        }
-
-        // DOMContentLoadedイベントでローカライズを実行
-        document.addEventListener('DOMContentLoaded', localizeMetaTags);
-    </script>
-
-    <!-- 構造化データ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Cranq",
-      "description": "サイクリング・ランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリ。HealthKit連携、GPSルート記録、統計分析、AIコーチ機能搭載。",
+      "description": "サイクリング・ランニングなどの HealthKit ワークアウトを記録・可視化し、AI が次の一歩を提案する iOS 向けフィットネスアプリ。",
       "operatingSystem": "iOS 26.2+",
       "applicationCategory": "HealthAndFitnessApplication",
       "url": "https://tichise.github.io/cranq-support/",
@@ -93,7 +62,7 @@
         "https://tichise.github.io/cranq-support/images/screenshots/ja/iPhone_6-9/02_statistics_initial.png",
         "https://tichise.github.io/cranq-support/images/screenshots/ja/iPhone_6-9/06_weather.png"
       ],
-      "featureList": "HealthKit連携, GPSルート記録, アクティビティ統計, ストリーク機能, ホームスクリーンウィジェット, AIコーチ",
+      "featureList": "HealthKit 連携, GPS ルート記録, アクティビティ統計, ストリーク機能, ホームスクリーンウィジェット, AI コーチ",
       "inLanguage": ["ja", "en"],
       "offers": {
         "@type": "Offer",
@@ -106,156 +75,511 @@
     </script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <a href="#" class="nav-brand">Cranq</a>
-            <div class="nav-links">
-                <a href="#features" data-lang-ja="機能" data-lang-en="Features">機能</a>
-                <a href="#about" data-lang-ja="アプリについて" data-lang-en="About">アプリについて</a>
-                <a href="#download" data-lang-ja="ダウンロード" data-lang-en="Download">ダウンロード</a>
-            </div>
-        </div>
-    </nav>
 
-    <section class="hero">
-        <div class="particles-bg" id="heroParticles"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Cranq</h1>
-                <p data-lang-ja="サイクリング・ランニングのアクティビティを記録・管理するフィットネストラッキングアプリ" data-lang-en="Track and manage your cycling, running & fitness activities with a powerful activity tracking app">サイクリング・ランニングのアクティビティを記録・管理するフィットネストラッキングアプリ</p>
-                <a href="https://apps.apple.com/jp/app/cranq/id6758046333" class="cta-button" target="_blank" data-lang-ja="App Storeからダウンロード" data-lang-en="Download on the App Store">App Storeからダウンロード</a>
-                <div class="platform-info">
-                    <div class="info-tag">
-                        <i class="fas fa-gift"></i>
-                        <span data-lang-ja="無料" data-lang-en="Free">無料</span>
-                    </div>
-                    <div class="info-tag">
-                        <i class="fab fa-apple"></i>
-                        <span>iOS 26.2+</span>
-                    </div>
-                    <div class="info-tag">
-                        <i class="fas fa-language"></i>
-                        <span data-lang-ja="日本語・English" data-lang-en="English / Japanese">日本語・English</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-right">
-                <div class="screenshot-carousel">
-                    <div class="screenshot-item">
-                        <img src="images/screenshots/ja/iPhone_6-9/10_share_preview.png" alt="Cranq Share" data-lang-ja-alt="シェアプレビュー" data-lang-en-alt="Share Preview">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/screenshots/ja/iPhone_6-9/01_history.png" alt="Cranq History" data-lang-ja-alt="アクティビティ履歴" data-lang-en-alt="Activity History">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/screenshots/ja/iPhone_6-9/02_statistics_initial.png" alt="Cranq Statistics" data-lang-ja-alt="統計情報" data-lang-en-alt="Statistics">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/screenshots/ja/iPhone_6-9/06_weather.png" alt="Cranq Weather" data-lang-ja-alt="天気情報" data-lang-en-alt="Weather">
-                    </div>
-                    <button class="nav-button prev-button"><i class="fas fa-chevron-left"></i></button>
-                    <button class="nav-button next-button"><i class="fas fa-chevron-right"></i></button>
-                    <div class="screenshot-dots"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <section id="features" class="section">
-            <div class="gradient-bg"></div>
-            <div class="container">
-                <h2 class="section-title"><i class="fas fa-star"></i> <span data-lang-ja="主な機能" data-lang-en="Key Features">主な機能</span></h2>
-                <div class="features">
-                    <div class="feature-card">
-                        <i class="fas fa-heartbeat"></i>
-                        <h3 data-lang-ja="HealthKit連携" data-lang-en="HealthKit Integration">HealthKit連携</h3>
-                        <p data-lang-ja="Apple HealthKitとシームレスに連携。ワークアウトデータを自動的に取得し、サイクリング・ランニング・ウォーキングなどのアクティビティを一元管理します。" data-lang-en="Seamlessly integrates with Apple HealthKit. Automatically retrieves workout data to centrally manage cycling, running, walking, and other activities.">Apple HealthKitとシームレスに連携。ワークアウトデータを自動的に取得し、サイクリング・ランニング・ウォーキングなどのアクティビティを一元管理します。</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h3 data-lang-ja="GPSルート記録" data-lang-en="GPS Route Recording">GPSルート記録</h3>
-                        <p data-lang-ja="GPSを使用してアクティビティのルートを正確に記録。走行経路をマップ上に表示し、お気に入りのコースを振り返ることができます。" data-lang-en="Accurately record activity routes using GPS. Display your path on a map and look back on your favorite courses.">GPSを使用してアクティビティのルートを正確に記録。走行経路をマップ上に表示し、お気に入りのコースを振り返ることができます。</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3 data-lang-ja="アクティビティ統計" data-lang-en="Activity Statistics">アクティビティ統計</h3>
-                        <p data-lang-ja="距離、速度、消費カロリー、心拍数などの詳細な統計情報をグラフで可視化。週間・月間レポートでトレーニングの進捗を把握できます。" data-lang-en="Visualize detailed statistics like distance, speed, calories burned, and heart rate in charts. Track training progress with weekly and monthly reports.">距離、速度、消費カロリー、心拍数などの詳細な統計情報をグラフで可視化。週間・月間レポートでトレーニングの進捗を把握できます。</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-fire"></i>
-                        <h3 data-lang-ja="ストリーク機能" data-lang-en="Streak Tracking">ストリーク機能</h3>
-                        <p data-lang-ja="連続運動日数を記録してモチベーションを維持。目標達成時にはバッジを獲得でき、継続的な運動習慣の形成をサポートします。" data-lang-en="Track consecutive exercise days to stay motivated. Earn badges when you reach goals and build consistent workout habits.">連続運動日数を記録してモチベーションを維持。目標達成時にはバッジを獲得でき、継続的な運動習慣の形成をサポートします。</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-th-large"></i>
-                        <h3 data-lang-ja="ホームスクリーンウィジェット" data-lang-en="Home Screen Widget">ホームスクリーンウィジェット</h3>
-                        <p data-lang-ja="ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。アプリを開かなくても運動状況を一目でチェックできます。" data-lang-en="Instantly check your weekly activity summary with the home screen widget. Monitor your exercise status at a glance without opening the app.">ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。アプリを開かなくても運動状況を一目でチェックできます。</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-robot"></i>
-                        <h3 data-lang-ja="AIコーチ" data-lang-en="AI Coach">AIコーチ</h3>
-                        <p data-lang-ja="AIがトレーニングデータを分析し、パーソナライズされたアドバイスを提供。あなたのフィットネス目標達成を知的にサポートします。" data-lang-en="AI analyzes your training data and provides personalized advice. Intelligently supports you in achieving your fitness goals.">AIがトレーニングデータを分析し、パーソナライズされたアドバイスを提供。あなたのフィットネス目標達成を知的にサポートします。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+<!-- ====================== Nav ====================== -->
+<nav class="nav" id="nav">
     <div class="container">
-        <section id="about" class="section">
-            <h2 class="section-title"><i class="fas fa-info-circle"></i> <span data-lang-ja="アプリについて" data-lang-en="About the App">アプリについて</span></h2>
-            <div class="about-section">
-                <div class="about-content">
-                    <p data-lang-ja="Cranqは、サイクリングやランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリです。Apple HealthKitと連携し、ワークアウトデータを自動的に取得・表示します。日々のトレーニングを可視化し、継続的な運動習慣をサポートします。" data-lang-en="Cranq is an iOS fitness app that lets you record and manage activities like cycling and running. It integrates with Apple HealthKit to automatically retrieve and display workout data, helping you visualize your daily training and maintain consistent exercise habits.">Cranqは、サイクリングやランニングなどのアクティビティを記録・管理できるiOS向けフィットネスアプリです。Apple HealthKitと連携し、ワークアウトデータを自動的に取得・表示します。日々のトレーニングを可視化し、継続的な運動習慣をサポートします。</p>
-                    <p data-lang-ja="GPSによるルート記録機能で走行経路をマップ上に表示。距離、速度、消費カロリーなどの詳細な統計情報をグラフで確認でき、トレーニングの成果を一目で把握できます。ストリーク機能により、連続運動日数を記録してモチベーションを維持します。" data-lang-en="The GPS route recording feature displays your path on a map. View detailed statistics like distance, speed, and calories burned in charts to track your training progress at a glance. The streak feature records consecutive exercise days to keep you motivated.">GPSによるルート記録機能で走行経路をマップ上に表示。距離、速度、消費カロリーなどの詳細な統計情報をグラフで確認でき、トレーニングの成果を一目で把握できます。ストリーク機能により、連続運動日数を記録してモチベーションを維持します。</p>
-                    <p data-lang-ja="ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。AIコーチ機能がトレーニングデータを分析し、パーソナライズされたアドバイスを提供します。あなたの理想的なフィットネスライフを、Cranqがサポートします。" data-lang-en="Check your weekly activity summary instantly with the home screen widget. The AI coach feature analyzes your training data to provide personalized advice. Let Cranq support your ideal fitness lifestyle.">ホームスクリーンウィジェットで今週のアクティビティサマリーをすぐに確認。AIコーチ機能がトレーニングデータを分析し、パーソナライズされたアドバイスを提供します。あなたの理想的なフィットネスライフを、Cranqがサポートします。</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/screenshots/ja/iPhone_6-9/02_statistics_initial.png" alt="Cranq アプリスクリーンショット">
-                </div>
-            </div>
-        </section>
+        <a href="#" class="nav-brand">
+            <span class="brand-mark">C</span>
+            Cranq
+        </a>
+        <div class="nav-links">
+            <a href="#stats" data-lang-ja="統計を読み解く" data-lang-en="Read your stats">統計を読み解く</a>
+            <a href="#loop" data-lang-ja="ワークフロー" data-lang-en="Workflow">ワークフロー</a>
+            <a href="#sync" data-lang-ja="同期" data-lang-en="Sync">同期</a>
+            <a href="#privacy" data-lang-ja="安心設計" data-lang-en="Privacy">安心設計</a>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+            <button data-lang="ja" class="active">JA</button>
+            <button data-lang="en">EN</button>
+        </div>
     </div>
+</nav>
 
-    <section id="download" class="section download-section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-download"></i> <span data-lang-ja="今すぐ無料ではじめよう" data-lang-en="Start Free Today">今すぐ無料ではじめよう</span></h2>
-            <p class="download-subtitle" data-lang-ja="あなたのフィットネスライフを、Cranqがサポートします。" data-lang-en="Let Cranq support your fitness journey.">あなたのフィットネスライフを、Cranqがサポートします。</p>
-            <a href="https://apps.apple.com/jp/app/cranq/id6758046333" class="cta-button cta-button-bottom" target="_blank" data-lang-ja="App Storeからダウンロード" data-lang-en="Download on the App Store">App Storeからダウンロード</a>
+<!-- ====================== Hero ====================== -->
+<section class="hero">
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="container">
+        <div class="hero-inner">
+            <span class="eyebrow hero-eyebrow">
+                <span class="dot"></span>
+                <span data-lang-ja="App Store で配信中" data-lang-en="Now on the App Store">App Store で配信中</span>
+            </span>
+            <h1 class="hero-title">
+                <span data-lang-ja="走った日々を、" data-lang-en="The days you moved, ">走った日々を、</span>
+                <span class="accent" data-lang-ja="ひとつの物語に。" data-lang-en="told as one story.">ひとつの物語に。</span>
+            </h1>
+            <p class="hero-sub"
+               data-lang-ja="HealthKit に積み上がったライドとランを、距離・標高・天気・心拍まで含めて美しく振り返る。AI コーチが次の一歩まで提案します。"
+               data-lang-en="Cranq turns the rides and runs piling up in Apple HealthKit into a clear, beautiful story—distance, elevation, weather, heart rate. AI coach proposes your next move.">
+                HealthKit に積み上がったライドとランを、距離・標高・天気・心拍まで含めて美しく振り返る。AI コーチが次の一歩まで提案します。
+            </p>
+            <div class="hero-actions">
+                <a href="https://apps.apple.com/jp/app/cranq/id6758046333" target="_blank" rel="noopener" class="btn btn-primary">
+                    <i class="fab fa-apple"></i>
+                    <span data-lang-ja="App Store で入手" data-lang-en="Download on the App Store">App Store で入手</span>
+                </a>
+                <a href="#stats" class="btn btn-ghost">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-lang-ja="統計を見る" data-lang-en="See the stats">統計を見る</span>
+                </a>
+            </div>
+            <div class="hero-meta">
+                <span><i class="fas fa-gift"></i> <span data-lang-ja="無料" data-lang-en="Free">無料</span></span>
+                <span class="hero-meta-divider"></span>
+                <span><i class="fab fa-apple"></i> iOS 26.2+</span>
+                <span class="hero-meta-divider"></span>
+                <span><i class="fas fa-heart-pulse"></i> HealthKit</span>
+                <span class="hero-meta-divider"></span>
+                <span data-lang-ja="日本語・English" data-lang-en="Japanese · English">日本語・English</span>
+            </div>
+
+            <div class="hero-stage">
+                <img src="images/screenshots/ja/iPhone_6-9/02_statistics_initial.png"
+                     alt="Cranq statistics on iPhone"
+                     data-lang-ja-alt="Cranq の統計画面"
+                     data-lang-en-alt="Cranq statistics screen"
+                     class="hero-phone hero-phone-side" loading="eager">
+                <img src="images/screenshots/ja/iPhone_6-9/01_history.png"
+                     alt="Cranq history on iPhone"
+                     data-lang-ja-alt="Cranq のアクティビティ履歴"
+                     data-lang-en-alt="Cranq activity history"
+                     class="hero-phone hero-phone-main" loading="eager">
+                <img src="images/screenshots/ja/iPhone_6-9/06_weather.png"
+                     alt="Cranq weather on iPhone"
+                     data-lang-ja-alt="Cranq の天気情報"
+                     data-lang-en-alt="Cranq weather details"
+                     class="hero-phone hero-phone-side" loading="eager">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 data-lang-ja="サポート" data-lang-en="Support">サポート</h3>
-                <ul class="footer-links">
-                    <li><a href="https://github.com/tichise/cranq-support" target="_blank">
-                        <i class="fas fa-life-ring"></i><span data-lang-ja="サポートページ" data-lang-en="Support Page">サポートページ</span>
-                    </a></li>
-                    <li><a href="https://github.com/tichise/cranq-support/issues/new?assignees=&labels=bug&projects=&template=bug_report.md" target="_blank">
-                        <i class="fas fa-bug"></i><span data-lang-ja="バグ報告" data-lang-en="Bug Report">バグ報告</span>
-                    </a></li>
-                    <li><a href="https://github.com/tichise/cranq-support/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md" target="_blank">
-                        <i class="fas fa-lightbulb"></i><span data-lang-ja="機能リクエスト" data-lang-en="Feature Request">機能リクエスト</span>
-                    </a></li>
+<!-- ====================== Problem ====================== -->
+<section class="section problem">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">
+                <span class="dot"></span>
+                <span data-lang-ja="課題" data-lang-en="Problem">課題</span>
+            </span>
+            <h2 class="section-title"
+                data-lang-ja="記録は溜まる。でも、振り返れない。"
+                data-lang-en="The data piles up. The story doesn’t.">
+                記録は溜まる。でも、振り返れない。
+            </h2>
+            <p class="section-lead"
+               data-lang-ja="HealthKit には何百ものワークアウトが眠っている。けれど純正の画面では「今週はどう動けたか」「先月より伸びたか」が見えにくい。Cranq は、その読み解きを引き受けます。"
+               data-lang-en="Hundreds of workouts sleep inside HealthKit. Yet the default view rarely tells you whether you actually moved this week, or grew over last month. Cranq takes that reading off your plate.">
+                HealthKit には何百ものワークアウトが眠っている。けれど純正の画面では「今週はどう動けたか」「先月より伸びたか」が見えにくい。Cranq は、その読み解きを引き受けます。
+            </p>
+        </div>
+
+        <div class="problem-grid">
+            <div class="problem-card reveal">
+                <div class="problem-icon"><i class="fas fa-list-ul"></i></div>
+                <h3 data-lang-ja="数字の羅列で終わる" data-lang-en="Just numbers, no story">数字の羅列で終わる</h3>
+                <p data-lang-ja="距離・時間・カロリーが並ぶだけ。今日のライドが、自分の中で意味を持たない。"
+                   data-lang-en="Distance, time, calories — flat columns that never quite mean anything to you.">
+                   距離・時間・カロリーが並ぶだけ。今日のライドが、自分の中で意味を持たない。
+                </p>
+            </div>
+            <div class="problem-card reveal">
+                <div class="problem-icon"><i class="fas fa-fire"></i></div>
+                <h3 data-lang-ja="続いている実感がない" data-lang-en="Streaks feel invisible">続いている実感がない</h3>
+                <p data-lang-ja="先週から今週、先月から今月、どれだけ続けられたか。リストを遡らないと分からない。"
+                   data-lang-en="Week to week, month to month — you can’t feel the streak unless you scroll all the way back.">
+                   先週から今週、先月から今月、どれだけ続けられたか。リストを遡らないと分からない。
+                </p>
+            </div>
+            <div class="problem-card reveal">
+                <div class="problem-icon"><i class="fas fa-compass"></i></div>
+                <h3 data-lang-ja="次の一歩が決められない" data-lang-en="The next move is fuzzy">次の一歩が決められない</h3>
+                <p data-lang-ja="「次は何をどう走れば伸びるのか」。判断材料は揃っているのに、自分一人では繋げにくい。"
+                   data-lang-en="“What should I do next to grow?” The data is all there—it just doesn’t connect itself.">
+                   「次は何をどう走れば伸びるのか」。判断材料は揃っているのに、自分一人では繋げにくい。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Spotlight (Activity stats) ====================== -->
+<section class="section spotlight" id="stats">
+    <div class="container">
+        <div class="spotlight-grid">
+            <div class="spotlight-text reveal">
+                <span class="eyebrow">
+                    <span class="dot"></span>
+                    <span data-lang-ja="統計を読み解く" data-lang-en="Read your stats">統計を読み解く</span>
+                </span>
+                <h2 class="section-title">
+                    <span data-lang-ja="ライドもランも、" data-lang-en="Every ride, every run, ">ライドもランも、</span>
+                    <span class="accent" data-lang-ja="ひとつの画面で。" data-lang-en="on one canvas.">ひとつの画面で。</span>
+                </h2>
+                <p class="section-lead"
+                   data-lang-ja="HealthKit のワークアウトを Cranq が読み解き、距離・標高・心拍・天気を 1 枚にまとめます。「あの日のライド」が、数字の羅列ではなく物語として立ち上がります。"
+                   data-lang-en="Cranq reads your HealthKit workouts and folds distance, elevation, heart rate, and weather into a single canvas. That ride from last weekend stops being a row of numbers and starts being a story.">
+                    HealthKit のワークアウトを Cranq が読み解き、距離・標高・心拍・天気を 1 枚にまとめます。「あの日のライド」が、数字の羅列ではなく物語として立ち上がります。
+                </p>
+                <div class="spotlight-features">
+                    <div class="spotlight-feature">
+                        <span class="check"><i class="fas fa-check"></i></span>
+                        <span data-lang-ja="サイクリング・ランニング・ウォーキング・ヨガを統一表示"
+                              data-lang-en="One unified view across cycling, running, walking, and yoga.">
+                            サイクリング・ランニング・ウォーキング・ヨガを統一表示
+                        </span>
+                    </div>
+                    <div class="spotlight-feature">
+                        <span class="check"><i class="fas fa-check"></i></span>
+                        <span data-lang-ja="ルート・標高・心拍・気温・湿度まで 1 タップで深掘り"
+                              data-lang-en="Route, elevation, heart rate, temperature, humidity — one tap deep.">
+                            ルート・標高・心拍・気温・湿度まで 1 タップで深掘り
+                        </span>
+                    </div>
+                    <div class="spotlight-feature">
+                        <span class="check"><i class="fas fa-check"></i></span>
+                        <span data-lang-ja="シェアプレビューで、走った 1 日をそのまま発信できる"
+                              data-lang-en="Share previews let you post the day you moved as-is.">
+                            シェアプレビューで、走った 1 日をそのまま発信できる
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-demo reveal">
+                <div class="activity-demo-header">
+                    <div class="traffic">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="label">cranq · today</div>
+                </div>
+                <div class="activity-summary">
+                    <div class="icon"><i id="activityIcon" class="fas fa-bicycle"></i></div>
+                    <div class="meta">
+                        <span class="name" id="activityName">朝のライド</span>
+                        <span class="when" id="activityWhen">06:42 — 08:15 · GPS</span>
+                    </div>
+                    <span class="badge" id="activityBadge">PR</span>
+                </div>
+                <div class="stats-label" data-lang-ja="今日のサマリー" data-lang-en="Today’s summary">今日のサマリー</div>
+                <ul class="stats-grid" id="activityStats">
+                    <!-- populated by script.js -->
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-lang-ja="法的情報" data-lang-en="Legal">法的情報</h3>
-                <ul class="footer-links">
-                    <li><a href="terms.html">
-                        <i class="fas fa-file-contract"></i><span data-lang-ja="利用規約" data-lang-en="Terms of Service">利用規約</span>
-                    </a></li>
-                    <li><a href="privacy.html">
-                        <i class="fas fa-shield-alt"></i><span data-lang-ja="プライバシーポリシー" data-lang-en="Privacy Policy">プライバシーポリシー</span>
-                    </a></li>
-                </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Core Loop ====================== -->
+<section class="section core-loop" id="loop">
+    <div class="container">
+        <div class="section-head center">
+            <span class="eyebrow">
+                <span class="dot"></span>
+                <span data-lang-ja="ワークフロー" data-lang-en="Workflow">ワークフロー</span>
+            </span>
+            <h2 class="section-title"
+                data-lang-ja="走る。振り返る。次へ進む。"
+                data-lang-en="Move. Reflect. Move again.">
+                走る。振り返る。次へ進む。
+            </h2>
+            <p class="section-lead"
+               data-lang-ja="GPS で記録し、グラフで振り返り、AI コーチに次の一歩を聞く。3 つのステップが滑らかに繋がります。"
+               data-lang-en="Record with GPS, reflect with charts, ask the AI coach for what’s next. Three steps, one fluid loop.">
+                GPS で記録し、グラフで振り返り、AI コーチに次の一歩を聞く。3 つのステップが滑らかに繋がります。
+            </p>
+        </div>
+
+        <div class="loop-grid">
+            <div class="loop-card reveal" data-accent="orange">
+                <div class="step">STEP 01 · TRACK</div>
+                <h3 data-lang-ja="GPS で記録する" data-lang-en="Track with GPS">GPS で記録する</h3>
+                <p data-lang-ja="走ったルート、登った標高、当日の天気まで HealthKit と連動して自動取得。"
+                   data-lang-en="Routes, elevation gained, even the weather of that day — captured straight from HealthKit.">
+                    走ったルート、登った標高、当日の天気まで HealthKit と連動して自動取得。
+                </p>
+                <div class="visual">
+                    <svg class="route-mini" viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true">
+                        <path class="bg" d="M5 55 C 30 20, 55 50, 85 30 S 140 60, 175 18 L 195 30"/>
+                        <path class="fg" d="M5 55 C 30 20, 55 50, 85 30 S 140 60, 175 18 L 195 30"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="loop-card reveal" data-accent="amber">
+                <div class="step">STEP 02 · REVIEW</div>
+                <h3 data-lang-ja="グラフで振り返る" data-lang-en="Review with charts">グラフで振り返る</h3>
+                <p data-lang-ja="週次・月次のチャートで、距離も標高も心拍も一望。続いた日数がそのまま自信になります。"
+                   data-lang-en="Weekly and monthly charts make distance, elevation, and heart rate one glance away. Streak days quietly turn into confidence.">
+                    週次・月次のチャートで、距離も標高も心拍も一望。続いた日数がそのまま自信になります。
+                </p>
+                <div class="visual">
+                    <div class="bars-mini">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="loop-card reveal" data-accent="rose">
+                <div class="step">STEP 03 · COACH</div>
+                <h3 data-lang-ja="AI コーチに相談する" data-lang-en="Ask the AI coach">AI コーチに相談する</h3>
+                <p data-lang-ja="あなたの記録を読んだ AI が、回復・強度・次の練習の指針を日本語で返してくれます。"
+                   data-lang-en="The AI reads your data and replies in plain words: recovery, intensity, what to try next.">
+                    あなたの記録を読んだ AI が、回復・強度・次の練習の指針を日本語で返してくれます。
+                </p>
+                <div class="visual">
+                    <div class="coach-mini">
+                        <div class="avatar"><i class="fas fa-robot"></i></div>
+                        <div class="bubble"
+                             data-lang-ja="先週は <strong>+18%</strong> 走れています。明日は心拍を抑えた 40 分 Z2 で回復を。"
+                             data-lang-en="You ran <strong>+18%</strong> last week. Tomorrow: an easy 40-min Z2 to recover.">
+                            先週は <strong>+18%</strong> 走れています。明日は心拍を抑えた 40 分 Z2 で回復を。
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p>&copy; <span>2026</span> Cranq. All rights reserved.</p>
+    </div>
+</section>
+
+<!-- ====================== Sync ====================== -->
+<section class="section sync" id="sync">
+    <div class="container">
+        <div class="section-head center">
+            <span class="eyebrow">
+                <span class="dot"></span>
+                <span data-lang-ja="同期" data-lang-en="Sync">同期</span>
+            </span>
+            <h2 class="section-title"
+                data-lang-ja="HealthKit を、そのまま中心に。"
+                data-lang-en="HealthKit at the center—always.">
+                HealthKit を、そのまま中心に。
+            </h2>
+            <p class="section-lead"
+               data-lang-ja="Cranq は Apple 純正の HealthKit と双方向に繋がります。Apple Watch のワークアウトも、サードパーティのアプリで取った記録も、同じ場所に集まります。"
+               data-lang-en="Cranq syncs both ways through HealthKit. Apple Watch workouts and records from your other fitness apps all gather in one place.">
+                Cranq は Apple 純正の HealthKit と双方向に繋がります。Apple Watch のワークアウトも、サードパーティのアプリで取った記録も、同じ場所に集まります。
+            </p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+
+        <div class="sync-stage">
+            <div class="sync-device">
+                <i class="fas fa-mobile-screen"></i>
+                <span>iPhone</span>
+            </div>
+            <div class="sync-line"></div>
+            <div class="sync-device">
+                <i class="fas fa-stopwatch"></i>
+                <span>Apple Watch</span>
+            </div>
+            <div class="sync-line"></div>
+            <div class="sync-device">
+                <i class="fas fa-heart-pulse"></i>
+                <span>HealthKit</span>
+            </div>
+            <div class="sync-line"></div>
+            <div class="sync-device">
+                <i class="fas fa-cloud"></i>
+                <span>iCloud</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Pro Tools ====================== -->
+<section class="section" id="pro">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">
+                <span class="dot"></span>
+                <span data-lang-ja="続けるための仕掛け" data-lang-en="Built to keep you moving">続けるための仕掛け</span>
+            </span>
+            <h2 class="section-title"
+                data-lang-ja="ストリーク、ウィジェット、AI。続けるための装備が揃う。"
+                data-lang-en="Streaks, widgets, AI — gear that keeps you going.">
+                ストリーク、ウィジェット、AI。続けるための装備が揃う。
+            </h2>
+            <p class="section-lead"
+               data-lang-ja="毎日の小さな一歩を、ホーム画面・通知・AI コーチが後押し。続いていることが、いちばんの励みになります。"
+               data-lang-en="Home screen, notifications, AI coach — small nudges that keep your streak alive. Continuity itself becomes the biggest reward.">
+                毎日の小さな一歩を、ホーム画面・通知・AI コーチが後押し。続いていることが、いちばんの励みになります。
+            </p>
+        </div>
+
+        <div class="pro-grid">
+            <div class="pro-card reveal">
+                <div class="pro-icon"><i class="fas fa-fire"></i></div>
+                <h3 data-lang-ja="ストリーク" data-lang-en="Streaks">ストリーク</h3>
+                <p data-lang-ja="連続して動けた日数を記録。0 に戻したくない、という静かな動機が習慣を支えます。"
+                   data-lang-en="Track consecutive moving days. The quiet pressure of not breaking the streak does the rest.">
+                    連続して動けた日数を記録。0 に戻したくない、という静かな動機が習慣を支えます。
+                </p>
+            </div>
+            <div class="pro-card reveal">
+                <div class="pro-icon"><i class="fas fa-th-large"></i></div>
+                <h3 data-lang-ja="ホーム画面ウィジェット" data-lang-en="Home-screen widget">ホーム画面ウィジェット</h3>
+                <p data-lang-ja="今週の距離と連続日数をホーム画面に常駐。アプリを開かずに、進捗を一望できます。"
+                   data-lang-en="This week’s distance and streak live on your home screen — no app launch required.">
+                    今週の距離と連続日数をホーム画面に常駐。アプリを開かずに、進捗を一望できます。
+                </p>
+            </div>
+            <div class="pro-card reveal">
+                <div class="pro-icon"><i class="fas fa-robot"></i></div>
+                <h3 data-lang-ja="AI コーチ" data-lang-en="AI Coach">AI コーチ</h3>
+                <span class="pro-tag" data-lang-ja="自分の API キー" data-lang-en="Your own API key">自分の API キー</span>
+                <p data-lang-ja="OpenAI / Anthropic の API キーを自分で持ち込む方式。あなたの記録を読み、回復・強度・次の練習を返します。"
+                   data-lang-en="Bring your own OpenAI / Anthropic key. The coach reads your data and replies with recovery, intensity, and what to try next.">
+                    OpenAI / Anthropic の API キーを自分で持ち込む方式。あなたの記録を読み、回復・強度・次の練習を返します。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Privacy ====================== -->
+<section class="section privacy" id="privacy">
+    <div class="container">
+        <div class="privacy-grid">
+            <div class="reveal">
+                <span class="eyebrow">
+                    <span class="dot"></span>
+                    <span data-lang-ja="安心設計" data-lang-en="Privacy & Cost">安心設計</span>
+                </span>
+                <h2 class="section-title"
+                    data-lang-ja="無料で使えて、データはあなたの端末に。"
+                    data-lang-en="Free to use. Your data stays on your device.">
+                    無料で使えて、データはあなたの端末に。
+                </h2>
+                <p class="section-lead"
+                   data-lang-ja="Cranq は完全無料。サブスクや課金は一切ありません。HealthKit のデータは端末を離れず、AI 機能を使うときだけ自分自身の API キーが裏で働きます。"
+                   data-lang-en="Cranq is fully free—no subscriptions, no in-app charges. HealthKit data never leaves your device, and AI features run only on your own API key.">
+                    Cranq は完全無料。サブスクや課金は一切ありません。HealthKit のデータは端末を離れず、AI 機能を使うときだけ自分自身の API キーが裏で働きます。
+                </p>
+            </div>
+
+            <div class="privacy-points reveal">
+                <div class="privacy-point">
+                    <i class="fas fa-shield-halved"></i>
+                    <div>
+                        <h4 data-lang-ja="HealthKit の中だけで完結" data-lang-en="Stays inside HealthKit">HealthKit の中だけで完結</h4>
+                        <p data-lang-ja="ワークアウトデータは Apple のリマインダー…ではなく HealthKit に留まり、第三者には渡しません。"
+                           data-lang-en="Your workout data lives inside Apple HealthKit—not on our servers, not shared with third parties.">
+                            ワークアウトデータは HealthKit に留まり、第三者には渡しません。
+                        </p>
+                    </div>
+                </div>
+                <div class="privacy-point">
+                    <i class="fas fa-key"></i>
+                    <div>
+                        <h4 data-lang-ja="AI は自分の API キーで動く" data-lang-en="AI runs on your API key">AI は自分の API キーで動く</h4>
+                        <p data-lang-ja="OpenAI / Anthropic への通信は端末から直接。Cranq の中継サーバーは存在しません。"
+                           data-lang-en="Requests to OpenAI / Anthropic go straight from your device. No Cranq middleman.">
+                            OpenAI / Anthropic への通信は端末から直接。Cranq の中継サーバーは存在しません。
+                        </p>
+                    </div>
+                </div>
+                <div class="privacy-point">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h4 data-lang-ja="アプリ本体は完全無料" data-lang-en="The app itself is free">アプリ本体は完全無料</h4>
+                        <p data-lang-ja="サブスクも追加課金もありません。AI を使う場合のみ、自分の API キー側で従量課金が発生します。"
+                           data-lang-en="No subscription, no in-app charges. AI features bill only on your own API key—pay-as-you-go.">
+                            サブスクも追加課金もありません。AI を使う場合のみ、自分の API キー側で従量課金が発生します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Roadmap ====================== -->
+<section class="section" id="roadmap">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">
+                <span class="dot"></span>
+                <span data-lang-ja="開発ロードマップ" data-lang-en="Roadmap">開発ロードマップ</span>
+            </span>
+            <h2 class="section-title"
+                data-lang-ja="現在地と、これから。"
+                data-lang-en="Where we are. Where we’re going.">
+                現在地と、これから。
+            </h2>
+        </div>
+        <div class="roadmap-list">
+            <div class="roadmap-item reveal">
+                <span class="stage">2026.02.11</span>
+                <span class="title" data-lang-ja="iOS 版 Cranq を公開（HealthKit + GPS + AI コーチ）" data-lang-en="Cranq launched for iOS — HealthKit, GPS, AI coach">iOS 版 Cranq を公開（HealthKit + GPS + AI コーチ）</span>
+                <span class="badge badge-shipped" data-lang-ja="リリース済み" data-lang-en="Shipped">リリース済み</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Final CTA ====================== -->
+<section class="section final-cta" id="cta">
+    <div class="container">
+        <div class="final-cta-card reveal">
+            <h2 data-lang-ja="走った日が、自分の物語になる。"
+                data-lang-en="The days you move become your story.">
+                走った日が、自分の物語になる。
+            </h2>
+            <p data-lang-ja="iPhone に今すぐインストール。本体は完全無料、HealthKit さえあれば動き出せます。"
+               data-lang-en="Install on iPhone right now. The app itself is fully free—HealthKit is all you need.">
+                iPhone に今すぐインストール。本体は完全無料、HealthKit さえあれば動き出せます。
+            </p>
+            <div class="hero-actions" style="justify-content:center;">
+                <a href="https://apps.apple.com/jp/app/cranq/id6758046333" target="_blank" rel="noopener" class="btn btn-primary">
+                    <i class="fab fa-apple"></i>
+                    <span data-lang-ja="App Store で入手" data-lang-en="Download on the App Store">App Store で入手</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== Footer ====================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-brand">
+            <span class="logo">
+                <span class="brand-mark">C</span>
+                Cranq
+            </span>
+            <p data-lang-ja="HealthKit から、もう一歩先へ。"
+               data-lang-en="One step beyond Apple HealthKit.">
+                HealthKit から、もう一歩先へ。
+            </p>
+        </div>
+        <div class="footer-section">
+            <h5 data-lang-ja="プロダクト" data-lang-en="Product">プロダクト</h5>
+            <ul>
+                <li><a href="#stats" data-lang-ja="統計を読み解く" data-lang-en="Read your stats">統計を読み解く</a></li>
+                <li><a href="#loop" data-lang-ja="ワークフロー" data-lang-en="Workflow">ワークフロー</a></li>
+                <li><a href="#sync" data-lang-ja="同期" data-lang-en="Sync">同期</a></li>
+                <li><a href="#roadmap" data-lang-ja="ロードマップ" data-lang-en="Roadmap">ロードマップ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h5 data-lang-ja="サポート / 法的情報" data-lang-en="Support / Legal">サポート / 法的情報</h5>
+            <ul>
+                <li><a href="https://github.com/tichise/cranq-support/issues/new?assignees=&labels=bug&projects=&template=bug_report.md" target="_blank" rel="noopener">
+                    <i class="fas fa-bug"></i><span data-lang-ja="バグ報告" data-lang-en="Bug Report">バグ報告</span>
+                </a></li>
+                <li><a href="https://github.com/tichise/cranq-support/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md" target="_blank" rel="noopener">
+                    <i class="fas fa-lightbulb"></i><span data-lang-ja="機能リクエスト" data-lang-en="Feature Request">機能リクエスト</span>
+                </a></li>
+                <li><a href="terms.html"><i class="fas fa-file-contract"></i><span data-lang-ja="利用規約" data-lang-en="Terms of Service">利用規約</span></a></li>
+                <li><a href="privacy.html"><i class="fas fa-shield-alt"></i><span data-lang-ja="プライバシーポリシー" data-lang-en="Privacy Policy">プライバシーポリシー</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© <span id="copyYear">2026</span> Cranq. All rights reserved.</span>
+        <span data-lang-ja="Made with care in Tokyo." data-lang-en="Made with care in Tokyo.">Made with care in Tokyo.</span>
+    </div>
+</footer>
+
+<script src="script.js?v=20260505"></script>
 </body>
 </html>
