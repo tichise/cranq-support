@@ -835,6 +835,90 @@ section.section {
 }
 
 /* ============================================================
+   Showcase (screenshot strip)
+   ============================================================ */
+
+.showcase {
+  background: var(--bg-base);
+  position: relative;
+}
+
+.showcase .section-head {
+  margin-bottom: 40px;
+}
+
+.showcase-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 240px);
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 8px 4px 32px;
+  margin: 0 calc(-1 * var(--container-pad));
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-soft) transparent;
+}
+
+.showcase-strip::-webkit-scrollbar {
+  height: 8px;
+}
+
+.showcase-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.showcase-strip::-webkit-scrollbar-thumb {
+  background: var(--accent-soft);
+  border-radius: 4px;
+}
+
+.showcase-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scroll-snap-align: start;
+}
+
+/* Same status-bar crop logic as the hero device frames */
+.showcase-phone {
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid var(--border-soft);
+  background: white;
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+  aspect-ratio: 1320 / 2668;
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+
+.showcase-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -7%;
+}
+
+.showcase-card:hover .showcase-phone {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-3);
+}
+
+.showcase-card figcaption {
+  font-size: 13px;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  padding: 0 4px;
+}
+
+@media (max-width: 720px) {
+  .showcase-strip { grid-auto-columns: minmax(180px, 200px); gap: 16px; }
+  .showcase-card figcaption { font-size: 12px; }
+}
+
+/* ============================================================
    Core Loop
    ============================================================ */
 
